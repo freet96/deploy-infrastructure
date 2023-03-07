@@ -48,7 +48,7 @@ jobs:
       - run: 
           name: run playbook and configure server
           command: |
-            ansible-playbook main-remote.yml -i inventory
+            ansible-playbook main-remote.yml -i inventory --private-key netInfraKey.pem
 
           
 
